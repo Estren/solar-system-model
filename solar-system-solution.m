@@ -48,3 +48,15 @@
 (*{rct (Cos[\[Nu]+\[Omega]] Cos[\[CapitalOmega]]-Cos[i] Sin[\[Nu]+\[Omega]] Sin[\[CapitalOmega]]),*)
 (*rct (Cos[i] Cos[\[CapitalOmega]] Sin[\[Nu]+\[Omega]]+Cos[\[Nu]+\[Omega]] Sin[\[CapitalOmega]]),*)
 (*rct Sin[i] Sin[\[Nu]+\[Omega]]}];*)
+
+
+(* ::Input:: *)
+(*plotRange = {{-5*10^12,5*10^12},{-5*10^12,5*10^12},{-5*10^11,5*10^11}};*)
+(*plotRangeConst={plotRange[[1,2]],plotRange[[2,2]],plotRange[[3,2]]};*)
+(**)
+(*CelestialData = {};*)
+(*AppendTo[CelestialData,*)
+(*{"Sun",StarData["Sun","Color"],GetSIBaseValue@StarData["Sun","Radius"],*)
+(*GetSIBaseValue@"SolarMass"*GetSIBaseValue@"GravitationalConstant",0,0,0,0,0,0,0,0}];*)
+(*Do[AppendTo[CelestialData,Flatten[Append[GetCelestialData[PlanetList[[i]]],{1,1}]]],{i,Length@PlanetList}];*)
+(*AppendTo[CelestialData,Flatten[Append[GetPlanetaryMoonData["Moon"],{1,4}]]];*)
