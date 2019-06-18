@@ -1,3 +1,13 @@
 (* ::Package:: *)
 
-
+(* ::Input:: *)
+(*EccentricAnomaly[ma_,e_,\[Epsilon]_,countMax_,ini_]:= *)
+(*Module[*)
+(*{xOld=ma+1000,x=ma,count=0,x1,x2},*)
+(*While[Abs[x-xOld]>\[Epsilon]&& count<countMax,*)
+(*xOld=x;*)
+(*If[count<ini,*)
+(*x1=ma+e*Sin@x; x2=ma+e*Sin@x1;x=(x1+x2)*0.5,*)
+(*x+=(ma-x+e*Sin@x)/(1.-e*Cos@x)];*)
+(*count++];*)
+(*x];*)
